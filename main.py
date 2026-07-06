@@ -17,20 +17,32 @@ def main():
     print("🎵 Your Spotify Playlists\n")
 
     for index, playlist in enumerate(playlists, start=1):
-        print(
-            f"{index}. {playlist['name']} ({playlist['tracks']} songs)"
-        )
+        print(f"{index}. {playlist['name']} ({playlist['tracks']} songs)")
 
-    playlist = playlists[0]
+    print("\n")
 
-    print(f"\nReading playlist: {playlist['name']}\n")
+    # 🔥 User chooses playlist (FIXED)
+    while True:
+        try:
+            choice = int(input("Enter playlist number: "))
 
-    songs = get_playlist_tracks(sp, playlist["id"])
+            if choice < 1 or choice > len(playlists):
+                print("❌ Number out of range. Try again.\n")
+                continue
+
+            break
+
+        except ValueError:
+            print("❌ Please enter a valid number.\n")
+
+    selected_playlist = playlists[choice - 1]
+
+    print(f"\nReading playlist: {selected_playlist['name']}\n")
+
+    songs = get_playlist_tracks(sp, selected_playlist["id"])
 
     for index, song in enumerate(songs[:20], start=1):
-        print(
-            f"{index}. {song.title} - {song.artist}"
-        )
+        print(f"{index}. {song.title} - {song.artist}")
 
 
 if __name__ == "__main__":
