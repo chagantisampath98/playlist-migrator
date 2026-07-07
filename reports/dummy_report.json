@@ -1,0 +1,82 @@
+{
+    "migration_date": "2026-07-06 18:43:00",
+    "source_playlist": "dummy",
+    "target_playlist": "rdehyj",
+    "matched_count": 12,
+    "failed_count": 0,
+    "matched_songs": [
+        {
+            "spotify": "Sahana Sahana (From \"The Rajasaab\") [TELUGU]",
+            "artist": "Thaman S, Vishal Mishra, Sruthi Ranjani, Krishna Kanth",
+            "youtube": "Full Video: Sahana Sahana | The Rajasaab | Prabhas | Nidhhi Agerwal | Maruthi | Thaman S | Vishal M",
+            "videoId": "2nbj5UT-1Jc"
+        },
+        {
+            "spotify": "Dekhlenge Saala (From \"Ustaad Bhagat Singh\")",
+            "artist": "Devi Sri Prasad, Vishal Dadlani, Haripriya, Bhaskarabhatla",
+            "youtube": "Power Star&#39;s Mass Blast! \ud83d\udd25 &quot;Dekhlenge Saala&quot; | Ustaad Bhagat Singh | DSP |  Sreeleela \ud83e\udd81\u26a1 #pspk",
+            "videoId": "oinV4LBbV6w"
+        },
+        {
+            "spotify": "Singari - From \"Dude (Telugu)\"",
+            "artist": "Sai Abhyankkar, Ramajogayya Sastry",
+            "youtube": "Singari Video Song | Dude | Pradeep Ranganathan, Mamitha Baiju | @SaiAbhyankkar | Keerthiswaran",
+            "videoId": "Ja7Yz0MPbwI"
+        },
+        {
+            "spotify": "Chikiri Chikiri (From \"Peddi\") [TELUGU]",
+            "artist": "A.R. Rahman, Mohit Chauhan, Balaji",
+            "youtube": "Chikiri Chikiri Video Song | Peddi | Ram Charan | Janhvi | Buchi Babu Sana | AR Rahman|Mohit Chauhan",
+            "videoId": "vVDp1ulBKIk"
+        },
+        {
+            "spotify": "Nuvvunte Chaley",
+            "artist": "Vivek - Mervin, Anirudh Ravichander, Ram Pothineni",
+            "youtube": "Nuvvunte Chaley - Lyrical | Andhra King Taluka | Ram Pothineni | Bhagyashri Borse | Mahesh Babu P",
+            "videoId": "s9NBDKfVg1c"
+        },
+        {
+            "spotify": "Rebel Saab (From \"The Rajasaab\") [HINDI]",
+            "artist": "Thaman S, Sachet Tandon, Blaaze, Kumaar",
+            "youtube": "Rebel Saab Lyrical Song (Hindi) - The RajaSaab |Prabhas |Maruthi |Thaman S |Vishwa |Sachet, Kumaar",
+            "videoId": "Ah1fj7MvPi0"
+        },
+        {
+            "spotify": "Boom Boom - From \"Dude (Telugu)\"",
+            "artist": "Sai Abhyankkar, Bhumi, Deepthi Suresh, Sanapati Bharadwaj Patrudu",
+            "youtube": "Boom Boom | Dude | Pradeep Ranganathan, Mamitha Baiju | @SaiAbhyankkar |Keerthiswaran | Mythri",
+            "videoId": "5JoPeWHkKJg"
+        },
+        {
+            "spotify": "Bhimavaram Balma (From \"Anaganaga Oka Raju\")",
+            "artist": "Mickey J. Meyer, Naveen Polishetty, Nutana Mohan, Chandra Bose",
+            "youtube": "Bhimavaram Balma Lyrical | Anaganaga Oka Raju | Naveen Polishetty,Meenakshi | Mickey J Meyer | Maari",
+            "videoId": "hW0aNcQPN2c"
+        },
+        {
+            "spotify": "Bhimavaram Balma (From \"Anaganaga Oka Raju\")",
+            "artist": "Mickey J. Meyer, Naveen Polishetty, Nutana Mohan, Chandra Bose",
+            "youtube": "Bhimavaram Balma Lyrical | Anaganaga Oka Raju | Naveen Polishetty,Meenakshi | Mickey J Meyer | Maari",
+            "videoId": "hW0aNcQPN2c"
+        },
+        {
+            "spotify": "Gira Gira Gingiraagirey (From \"Champion\")",
+            "artist": "Mickey J. Meyer, Ram Miriyala, Kasarla Shyam",
+            "youtube": "Gira Gira Gingiraagirey Lyrical Video | Champion | Roshan | Anaswara | Ram Miriyala | Mickey J Meyer",
+            "videoId": "VXSK2S8Aq0Q"
+        },
+        {
+            "spotify": "Gira Gira Gingiraagirey (From \"Champion\")",
+            "artist": "Mickey J. Meyer, Ram Miriyala, Kasarla Shyam",
+            "youtube": "Gira Gira Gingiraagirey Lyrical Video | Champion | Roshan | Anaswara | Ram Miriyala | Mickey J Meyer",
+            "videoId": "VXSK2S8Aq0Q"
+        },
+        {
+            "spotify": "Dheere Dheere (From \"FUNKY\")",
+            "artist": "Bheems Ceciroleo, Sanjith Hegde, Rohini Soratt, K.V. Anudeep",
+            "youtube": "Dheere Dheere Lyrical Video | FUNKY | Vishwak Sen, Kayadu Lohar | Anudeep KV | Bheems Ceciroleo",
+            "videoId": "jnkAv_DkqoY"
+        }
+    ],
+    "failed_songs": []
+}

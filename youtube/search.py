@@ -1,16 +1,17 @@
-from ytmusicapi import YTMusic
-
-
-def search_song(ytmusic, title, artist):
+def search_song(youtube, title, artist):
     """
-    Search for a song on YouTube Music.
+    Search YouTube for a song using both title and artist.
     """
 
-    query = f"{title} {artist}"
+    query = f"{title} {artist} official audio"
 
-    results = ytmusic.search(
-        query=query,
-        filter="songs"
+    request = youtube.search().list(
+        part="snippet",
+        q=query,
+        type="video",
+        maxResults=5
     )
 
-    return results
+    response = request.execute()
+
+    return response.get("items", [])
