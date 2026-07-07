@@ -1,82 +1,72 @@
 {
-    "migration_date": "2026-07-06 18:43:00",
+    "migration_date": "2026-07-06 19:19:28",
     "source_playlist": "dummy",
-    "target_playlist": "rdehyj",
-    "matched_count": 12,
-    "failed_count": 0,
+    "target_playlist": "dummy - YouTube",
+    "matched_count": 1,
+    "failed_count": 11,
     "matched_songs": [
-        {
-            "spotify": "Sahana Sahana (From \"The Rajasaab\") [TELUGU]",
-            "artist": "Thaman S, Vishal Mishra, Sruthi Ranjani, Krishna Kanth",
-            "youtube": "Full Video: Sahana Sahana | The Rajasaab | Prabhas | Nidhhi Agerwal | Maruthi | Thaman S | Vishal M",
-            "videoId": "2nbj5UT-1Jc"
-        },
         {
             "spotify": "Dekhlenge Saala (From \"Ustaad Bhagat Singh\")",
             "artist": "Devi Sri Prasad, Vishal Dadlani, Haripriya, Bhaskarabhatla",
             "youtube": "Power Star&#39;s Mass Blast! \ud83d\udd25 &quot;Dekhlenge Saala&quot; | Ustaad Bhagat Singh | DSP |  Sreeleela \ud83e\udd81\u26a1 #pspk",
             "videoId": "oinV4LBbV6w"
+        }
+    ],
+    "failed_songs": [
+        {
+            "spotify": "Sahana Sahana (From \"The Rajasaab\") [TELUGU]",
+            "artist": "Thaman S, Vishal Mishra, Sruthi Ranjani, Krishna Kanth",
+            "error": "<HttpError 429 when requesting https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=Sahana+Sahana+%28From+%22The+Rajasaab%22%29+%5BTELUGU%5D+Thaman+S%2C+Vishal+Mishra%2C+Sruthi+Ranjani%2C+Krishna+Kanth+official+audio&type=video&maxResults=5&alt=json returned \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:772305592550'.\". Details: \"[{'message': \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:772305592550'.\", 'domain': 'global', 'reason': 'rateLimitExceeded'}]\">"
         },
         {
             "spotify": "Singari - From \"Dude (Telugu)\"",
             "artist": "Sai Abhyankkar, Ramajogayya Sastry",
-            "youtube": "Singari Video Song | Dude | Pradeep Ranganathan, Mamitha Baiju | @SaiAbhyankkar | Keerthiswaran",
-            "videoId": "Ja7Yz0MPbwI"
+            "error": "<HttpError 429 when requesting https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=Singari+-+From+%22Dude+%28Telugu%29%22+Sai+Abhyankkar%2C+Ramajogayya+Sastry+official+audio&type=video&maxResults=5&alt=json returned \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:772305592550'.\". Details: \"[{'message': \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:772305592550'.\", 'domain': 'global', 'reason': 'rateLimitExceeded'}]\">"
         },
         {
             "spotify": "Chikiri Chikiri (From \"Peddi\") [TELUGU]",
             "artist": "A.R. Rahman, Mohit Chauhan, Balaji",
-            "youtube": "Chikiri Chikiri Video Song | Peddi | Ram Charan | Janhvi | Buchi Babu Sana | AR Rahman|Mohit Chauhan",
-            "videoId": "vVDp1ulBKIk"
+            "error": "<HttpError 429 when requesting https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=Chikiri+Chikiri+%28From+%22Peddi%22%29+%5BTELUGU%5D+A.R.+Rahman%2C+Mohit+Chauhan%2C+Balaji+official+audio&type=video&maxResults=5&alt=json returned \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:772305592550'.\". Details: \"[{'message': \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:772305592550'.\", 'domain': 'global', 'reason': 'rateLimitExceeded'}]\">"
         },
         {
             "spotify": "Nuvvunte Chaley",
             "artist": "Vivek - Mervin, Anirudh Ravichander, Ram Pothineni",
-            "youtube": "Nuvvunte Chaley - Lyrical | Andhra King Taluka | Ram Pothineni | Bhagyashri Borse | Mahesh Babu P",
-            "videoId": "s9NBDKfVg1c"
+            "error": "<HttpError 429 when requesting https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=Nuvvunte+Chaley+Vivek+-+Mervin%2C+Anirudh+Ravichander%2C+Ram+Pothineni+official+audio&type=video&maxResults=5&alt=json returned \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:772305592550'.\". Details: \"[{'message': \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:772305592550'.\", 'domain': 'global', 'reason': 'rateLimitExceeded'}]\">"
         },
         {
             "spotify": "Rebel Saab (From \"The Rajasaab\") [HINDI]",
             "artist": "Thaman S, Sachet Tandon, Blaaze, Kumaar",
-            "youtube": "Rebel Saab Lyrical Song (Hindi) - The RajaSaab |Prabhas |Maruthi |Thaman S |Vishwa |Sachet, Kumaar",
-            "videoId": "Ah1fj7MvPi0"
+            "error": "<HttpError 429 when requesting https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=Rebel+Saab+%28From+%22The+Rajasaab%22%29+%5BHINDI%5D+Thaman+S%2C+Sachet+Tandon%2C+Blaaze%2C+Kumaar+official+audio&type=video&maxResults=5&alt=json returned \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:772305592550'.\". Details: \"[{'message': \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:772305592550'.\", 'domain': 'global', 'reason': 'rateLimitExceeded'}]\">"
         },
         {
             "spotify": "Boom Boom - From \"Dude (Telugu)\"",
             "artist": "Sai Abhyankkar, Bhumi, Deepthi Suresh, Sanapati Bharadwaj Patrudu",
-            "youtube": "Boom Boom | Dude | Pradeep Ranganathan, Mamitha Baiju | @SaiAbhyankkar |Keerthiswaran | Mythri",
-            "videoId": "5JoPeWHkKJg"
+            "error": "<HttpError 429 when requesting https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=Boom+Boom+-+From+%22Dude+%28Telugu%29%22+Sai+Abhyankkar%2C+Bhumi%2C+Deepthi+Suresh%2C+Sanapati+Bharadwaj+Patrudu+official+audio&type=video&maxResults=5&alt=json returned \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:772305592550'.\". Details: \"[{'message': \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:772305592550'.\", 'domain': 'global', 'reason': 'rateLimitExceeded'}]\">"
         },
         {
             "spotify": "Bhimavaram Balma (From \"Anaganaga Oka Raju\")",
             "artist": "Mickey J. Meyer, Naveen Polishetty, Nutana Mohan, Chandra Bose",
-            "youtube": "Bhimavaram Balma Lyrical | Anaganaga Oka Raju | Naveen Polishetty,Meenakshi | Mickey J Meyer | Maari",
-            "videoId": "hW0aNcQPN2c"
+            "error": "<HttpError 429 when requesting https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=Bhimavaram+Balma+%28From+%22Anaganaga+Oka+Raju%22%29+Mickey+J.+Meyer%2C+Naveen+Polishetty%2C+Nutana+Mohan%2C+Chandra+Bose+official+audio&type=video&maxResults=5&alt=json returned \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:772305592550'.\". Details: \"[{'message': \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:772305592550'.\", 'domain': 'global', 'reason': 'rateLimitExceeded'}]\">"
         },
         {
             "spotify": "Bhimavaram Balma (From \"Anaganaga Oka Raju\")",
             "artist": "Mickey J. Meyer, Naveen Polishetty, Nutana Mohan, Chandra Bose",
-            "youtube": "Bhimavaram Balma Lyrical | Anaganaga Oka Raju | Naveen Polishetty,Meenakshi | Mickey J Meyer | Maari",
-            "videoId": "hW0aNcQPN2c"
+            "error": "<HttpError 429 when requesting https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=Bhimavaram+Balma+%28From+%22Anaganaga+Oka+Raju%22%29+Mickey+J.+Meyer%2C+Naveen+Polishetty%2C+Nutana+Mohan%2C+Chandra+Bose+official+audio&type=video&maxResults=5&alt=json returned \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:772305592550'.\". Details: \"[{'message': \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:772305592550'.\", 'domain': 'global', 'reason': 'rateLimitExceeded'}]\">"
         },
         {
             "spotify": "Gira Gira Gingiraagirey (From \"Champion\")",
             "artist": "Mickey J. Meyer, Ram Miriyala, Kasarla Shyam",
-            "youtube": "Gira Gira Gingiraagirey Lyrical Video | Champion | Roshan | Anaswara | Ram Miriyala | Mickey J Meyer",
-            "videoId": "VXSK2S8Aq0Q"
+            "error": "<HttpError 429 when requesting https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=Gira+Gira+Gingiraagirey+%28From+%22Champion%22%29+Mickey+J.+Meyer%2C+Ram+Miriyala%2C+Kasarla+Shyam+official+audio&type=video&maxResults=5&alt=json returned \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:772305592550'.\". Details: \"[{'message': \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:772305592550'.\", 'domain': 'global', 'reason': 'rateLimitExceeded'}]\">"
         },
         {
             "spotify": "Gira Gira Gingiraagirey (From \"Champion\")",
             "artist": "Mickey J. Meyer, Ram Miriyala, Kasarla Shyam",
-            "youtube": "Gira Gira Gingiraagirey Lyrical Video | Champion | Roshan | Anaswara | Ram Miriyala | Mickey J Meyer",
-            "videoId": "VXSK2S8Aq0Q"
+            "error": "<HttpError 429 when requesting https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=Gira+Gira+Gingiraagirey+%28From+%22Champion%22%29+Mickey+J.+Meyer%2C+Ram+Miriyala%2C+Kasarla+Shyam+official+audio&type=video&maxResults=5&alt=json returned \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:772305592550'.\". Details: \"[{'message': \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:772305592550'.\", 'domain': 'global', 'reason': 'rateLimitExceeded'}]\">"
         },
         {
             "spotify": "Dheere Dheere (From \"FUNKY\")",
             "artist": "Bheems Ceciroleo, Sanjith Hegde, Rohini Soratt, K.V. Anudeep",
-            "youtube": "Dheere Dheere Lyrical Video | FUNKY | Vishwak Sen, Kayadu Lohar | Anudeep KV | Bheems Ceciroleo",
-            "videoId": "jnkAv_DkqoY"
+            "error": "<HttpError 429 when requesting https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=Dheere+Dheere+%28From+%22FUNKY%22%29+Bheems+Ceciroleo%2C+Sanjith+Hegde%2C+Rohini+Soratt%2C+K.V.+Anudeep+official+audio&type=video&maxResults=5&alt=json returned \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:772305592550'.\". Details: \"[{'message': \"Quota exceeded for quota metric 'Search Queries' and limit 'Search Queries per day' of service 'youtube.googleapis.com' for consumer 'project_number:772305592550'.\", 'domain': 'global', 'reason': 'rateLimitExceeded'}]\">"
         }
-    ],
-    "failed_songs": []
+    ]
 }

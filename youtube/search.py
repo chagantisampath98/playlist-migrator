@@ -1,9 +1,5 @@
 def search_song(youtube, title, artist):
-    """
-    Search YouTube for a song using both title and artist.
-    """
-
-    query = f"{title} {artist} official audio"
+    query = f"{title} {artist} official song"
 
     request = youtube.search().list(
         part="snippet",
@@ -13,5 +9,4 @@ def search_song(youtube, title, artist):
     )
 
     response = request.execute()
-
     return response.get("items", [])
