@@ -1,12 +1,11 @@
 def search_song(youtube, title, artist):
     query = f"{title} {artist} official song"
 
-    request = youtube.search().list(
+    response = youtube.search().list(
         part="snippet",
         q=query,
         type="video",
-        maxResults=5
-    )
+        maxResults=5,
+    ).execute()
 
-    response = request.execute()
     return response.get("items", [])

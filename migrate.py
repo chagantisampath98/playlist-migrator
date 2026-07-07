@@ -40,8 +40,12 @@ def main():
         sp,
         youtube,
         source_playlist,
-        target_playlist_name
+        target_playlist_name,
     )
+
+    if result and result.get("quota_exceeded"):
+        print(result["message"])
+        return
 
     if not result:
         print("No songs matched. Playlist was not created.")

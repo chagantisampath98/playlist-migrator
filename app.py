@@ -8,29 +8,25 @@ from migration_service import migrate_playlist
 
 st.set_page_config(
     page_title="Playlist Migrator",
-    page_icon="🎵"
+    page_icon="🎵",
+    layout="centered",
 )
 
-st.title("🎵 Spotify → YouTube Playlist Migrator")
+st.title("🎵 Spotify ➜ YouTube Playlist Migrator")
 st.write("Migrate your Spotify playlists to YouTube.")
 
 sp = get_spotify_client()
 youtube = get_youtube_client()
 
 playlists = get_user_playlists(sp)
+playlist_names = [p["name"] for p in playlists]
 
-playlist_names = [playlist["name"] for playlist in playlists]
-
-selected_name = st.selectbox(
-    "Select Spotify Playlist",
-    playlist_names
-)
-
+selected_name = st.selectbox("Select Spotify Playlist", playlist_names)
 selected_playlist = playlists[playlist_names.index(selected_name)]
 
 playlist_name = st.text_input(
     "YouTube Playlist Name",
-    value=f"{selected_name} - YouTube"
+    value=f"{selected_name} - YouTube",
 )
 
 if st.button("Start Migration"):
@@ -39,11 +35,15 @@ if st.button("Start Migration"):
             sp,
             youtube,
             selected_playlist,
-            playlist_name
+            playlist_name,
         )
 
-    if not result:
+    if result and result.get("quota_exceeded"):
+        st.error(result["message"])
+
+    elif result is None:
         st.error("No songs matched. Playlist was not created.")
+
     else:
         st.success("Migration Completed!")
 
@@ -52,9 +52,9 @@ if st.button("Start Migration"):
         st.metric("Added Songs", result["added"])
         st.metric("Failed Songs", result["failed"])
 
-        with open(result["report_file"], "rb") as file:
+        with open(result["report_file"], "rb") as report:
             st.download_button(
                 "Download Report",
-                file,
-                file_name="migration_report.json"
+                report,
+                file_name="migration_report.json",
             )

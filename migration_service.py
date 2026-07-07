@@ -1,5 +1,3 @@
-from tqdm import tqdm
-
 from spotify.tracks import get_playlist_tracks
 from youtube.playlists import create_playlist, add_video_to_playlist
 from youtube.search import search_song
@@ -15,7 +13,11 @@ def migrate_playlist(sp, youtube, source_playlist, target_playlist_name):
     matched_songs = []
     failed_songs = []
 
-    for song in tqdm(songs, desc="Searching Songs", unit="song"):
+    print(f"Searching {total} songs...")
+
+    for index, song in enumerate(songs, start=1):
+        print(f"[{index}/{total}] Searching: {song.title}")
+
         try:
             results = search_song(youtube, song.title, song.artist)
             match = find_best_match(results, song)
@@ -31,16 +33,25 @@ def migrate_playlist(sp, youtube, source_playlist, target_playlist_name):
                 failed_songs.append({
                     "spotify": song.title,
                     "artist": song.artist,
-                    "reason": "No match found",
+                    "error": "No match found",
                 })
 
         except Exception as error:
+            error_text = str(error)
+
+            if "Quota exceeded" in error_text:
+                return {
+                    "quota_exceeded": True,
+                    "message": "YouTube API quota exceeded. Try again tomorrow.",
+                }
+
             failed_songs.append({
                 "spotify": song.title,
                 "artist": song.artist,
-                "reason": str(error),
+                "error": error_text,
             })
-            logger.error(f"Search failed for {song.title}: {error}")
+
+            logger.error(f"Search failed for {song.title}: {error_text}")
 
     if not matched_songs:
         return None
@@ -48,16 +59,18 @@ def migrate_playlist(sp, youtube, source_playlist, target_playlist_name):
     playlist_id = create_playlist(
         youtube,
         target_playlist_name,
-        f"Migrated from Spotify playlist: {source_playlist['name']}"
+        f"Migrated from Spotify playlist: {source_playlist['name']}",
     )
 
     added_count = 0
 
-    for song in matched_songs:
+    for index, song in enumerate(matched_songs, start=1):
+        print(f"Adding {index}/{len(matched_songs)}")
+
         success = add_video_to_playlist(
             youtube,
             playlist_id,
-            song["videoId"]
+            song["videoId"],
         )
 
         if success:
@@ -67,7 +80,7 @@ def migrate_playlist(sp, youtube, source_playlist, target_playlist_name):
         source_playlist["name"],
         target_playlist_name,
         matched_songs,
-        failed_songs
+        failed_songs,
     )
 
     return {

@@ -1,6 +1,5 @@
 def get_user_playlists(sp):
     playlists = []
-
     results = sp.current_user_playlists()
 
     while True:
@@ -8,7 +7,7 @@ def get_user_playlists(sp):
             playlists.append({
                 "id": item["id"],
                 "name": item["name"],
-                "tracks": item.get("items", {}).get("total", 0)
+                "tracks": item["tracks"]["total"],
             })
 
         if results.get("next"):

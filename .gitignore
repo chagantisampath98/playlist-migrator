@@ -2,8 +2,10 @@
 .env
 __pycache__/
 .cache/
-token.json
-client_secret.json
 *.pyc
-reports/
+
+client_secret.json
+token.json
+
 logs/
+reports/

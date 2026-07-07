@@ -1,10 +1,10 @@
-def create_playlist(
-    youtube,
-    title,
-    description
-):
+import time
 
-    request = youtube.playlists().insert(
+from googleapiclient.errors import HttpError
+
+
+def create_playlist(youtube, title, description):
+    response = youtube.playlists().insert(
         part="snippet,status",
         body={
             "snippet": {
@@ -12,18 +12,12 @@ def create_playlist(
                 "description": description,
             },
             "status": {
-                "privacyStatus": "private"
-            }
-        }
-    )
-
-    response = request.execute()
+                "privacyStatus": "private",
+            },
+        },
+    ).execute()
 
     return response["id"]
-
-
-import time
-from googleapiclient.errors import HttpError
 
 
 def add_video_to_playlist(youtube, playlist_id, video_id):
@@ -41,6 +35,7 @@ def add_video_to_playlist(youtube, playlist_id, video_id):
                     }
                 },
             ).execute()
+
             return True
 
         except HttpError as error:
