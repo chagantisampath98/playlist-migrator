@@ -5,6 +5,5 @@ __pycache__/
 token.json
 client_secret.json
 *.pyc
-reports/client_secret.json
-token.json
-.env
+reports/
+logs/
